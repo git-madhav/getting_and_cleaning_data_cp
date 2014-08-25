@@ -26,11 +26,10 @@ www.smartlab.ws
 
 ### Experimental and calculation description ###
 
-```
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities ( `` WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING `` ) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor accelerometer signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' in original data provided at reference for more details.
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor accelerometer signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See `` features_info.txt `` in original data provided at reference for more details.
 
 The variables selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz.  Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.  Similarly, the accelerometer signal was then separated into body and gravity accelerometer signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
@@ -41,7 +40,6 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-```
 
 
 ### Dataset description ###
@@ -52,7 +50,7 @@ This data set is obtained from original raw data downloaded from web at :
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Run the script : run_analysis.R in R console or R studio to obtain the tidy
+Run the script : `` run_analysis.R `` in R console or R studio to obtain the tidy
 data set `` average_tidy_data.txt. ``
 
 
@@ -132,15 +130,15 @@ avg_fBodyGyro-meanFreq-Y  | Group Average of estimated mean frequency of Gyrosco
 avg_fBodyGyro-meanFreq-Z  | Group Average of estimated mean frequency of Gyroscope (Body) Signal in Z direction | Average is per volunter and activity. Measured in frequency domain using FFT analysis of time domain signals. Weighted average of the frequency components to obtain a mean frequency.
 avg_fBodyAccMag-mean  | Group Average of estimated mean of Accelerometer (Body) Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyAccMag-std   | Group Average of estimated standard deviation of Accelerometer (Body) Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
-avg_fBodyAccMag-meanFreq
+avg_fBodyAccMag-meanFreq | Group Average of estimated mean frequency of Accelerometer (Body) Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals. Weighted average of the frequency components to obtain a mean frequency.
 avg_fBodyBodyAccJerkMag-mean  | Group Average of estimated mean of Accelerometer (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyBodyAccJerkMag-std   | Group Average of estimated standard deviation of Accelerometer (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
-avg_fBodyBodyAccJerkMag-meanFreq
+avg_fBodyBodyAccJerkMag-meanFreq | Group Average of estimated mean frequency of Accelerometer (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals. Weighted average of the frequency components to obtain a mean frequency.
 avg_fBodyBodyGyroMag-mean  | Group Average of estimated mean of Gyroscope (Body) Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyBodyGyroMag-std   | Group Average of estimated standard deviation of Gyroscope (Body) Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyBodyGyroMag-meanFreq  | Group Average of estimated mean frequency of Gyroscope (Body) Signal magnitude.  | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals. Weighted average of the frequency components to obtain a mean frequency.
 avg_fBodyBodyGyroJerkMag-mean  | Group Average of estimated mean of Gyroscope (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyBodyGyroJerkMag-std   | Group Average of estimated standard deviation of Gyroscope (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
-avg_fBodyBodyGyroJerkMag-meanFreq
+avg_fBodyBodyGyroJerkMag-meanFreq  | Group Average of estimated mean frequency of Gyroscope (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals. Weighted average of the frequency components to obtain a mean frequency.
 
 
