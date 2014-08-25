@@ -1,7 +1,6 @@
 # Code Book : Human Activity Recognition Using Smartphones Dataset #
 
-## Group Averages of mean and standard deviation values for each subject and
-activity ##
+## Group Averages of mean and standard deviation values for each subject and activity ##
 
 ### Version 1.0 ###
 
@@ -59,7 +58,6 @@ data set `` average_tidy_data.txt. ``
 
 ### Dataset variable description ###
 
-```
 
 Variable Name | Variable | Values or Explanation
 ------------- | -------- | ---------------------
@@ -145,4 +143,4 @@ avg_fBodyBodyGyroJerkMag-mean  | Group Average of estimated mean of Gyroscope (B
 avg_fBodyBodyGyroJerkMag-std   | Group Average of estimated standard deviation of Gyroscope (Body) Jerk Signal magnitude | magnitude of these signals is calculated using the Euclidean norm. Measured in frequency domain using FFT analysis of time domain signals.
 avg_fBodyBodyGyroJerkMag-meanFreq
 
-```
+
