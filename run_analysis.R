@@ -171,7 +171,8 @@ names(tidy.df) <- tidy.df.names
 # write the data set to file in simple text file.
 write.table(tidy.df, "./average_tidy_data.txt", row.names=FALSE)
 
-write(tidy.df.names, "./average_tidy_data.cookbook.txt")
+# write column names used for CodeBook.md
+#write(tidy.df.names, "./average_tidy_data.cookbook.txt")
 
 # write into csv file.
 #write.csv(tidy.df, "./average_tidy_data.csv", row.names=FALSE)
